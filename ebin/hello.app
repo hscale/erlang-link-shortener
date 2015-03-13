@@ -1,0 +1,9 @@
+{application,hello,
+             [{description,"hello"},
+              {vsn,"1"},
+              {modules,[hello,hello_app,hello_config,hello_resource,hello_sup,
+                        uncertain_resource]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,crypto,mochiweb,webmachine]},
+              {mod,{hello_app,[]}},
+              {env,[{web_ip,"0.0.0.0"},{web_port,8080}]}]}.
